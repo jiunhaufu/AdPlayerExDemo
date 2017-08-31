@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fu.alfie.com.adplayerexdemo.AdPagerActivity">
+
+    <com.ryane.banner_lib.AdPlayBanner
+        android:id="@+id/game_banner"
+        android:layout_width="300dp"
+        android:layout_height="375dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/bottomClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/game_banner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="?attr/colorControlHighlight"
+        android:onClick="onCloseBottonClick"
+        android:paddingBottom="5dp"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp"
+        android:paddingTop="5dp"
+        android:text="關閉廣告"
+        android:textSize="30sp" />
+
+</RelativeLayout>
